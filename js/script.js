@@ -41,6 +41,14 @@ $(function() {
   //   });
   // });
 
-  $(".lightbox").delay(500).fadeTo(1000, 2);
+  //$(".lightbox").delay(500).fadeTo(1000, 2);
+
+  // Using css selectors
+
+  // $("p").css("background-color", "rgba(180, 180, 30, 0.8");
+  // $(".red-box").css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("#list").css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("input[type='email']").css("background-color", "rgba(180, 180, 30, 0.8");
+   $("h1, p, input").css("background-color", "rgba(180, 180, 30, 0.8");
 
 });
