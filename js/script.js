@@ -49,6 +49,42 @@ $(function() {
   // $(".red-box").css("background-color", "rgba(180, 180, 30, 0.8");
   // $("#list").css("background-color", "rgba(180, 180, 30, 0.8");
   // $("input[type='email']").css("background-color", "rgba(180, 180, 30, 0.8");
-   $("h1, p, input").css("background-color", "rgba(180, 180, 30, 0.8");
+  //  $("h1, p, input").css("background-color", "rgba(180, 180, 30, 0.8");
+  //  $("p:first").css("background-color", "rgba(180, 180, 30, 0.8");
+  //  $("li:even").css("background-color", "rgba(180, 180, 30, 0.8");
+  //  $("li:odd").css("background-color", "rgba(180, 180, 30, 0.8");
+  //  $("input:text").css("background-color", "rgba(180, 180, 30, 0.8");
+  //  $("input:radio").css("background-color", "rgba(180, 180, 30, 0.8");
+
+  // jquery methods for traversal
+
+  // $("#list").find("li").css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("#list").children("li").css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("input:password").children().css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("#list").parents("div").css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("#list").parent().css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("#list").siblings(":header").css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("#list").prev().css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("#list").next().css("background-color", "rgba(180, 180, 30, 0.8");
+  // $(":header").next().css("background-color", "rgba(180, 180, 30, 0.8");
+
+  // jQuery methods for filtering
+
+  // $("#list").children("li").filter(":odd").css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("li").filter(function(index) {
+  //   return index % 3 === 0;
+  // }).css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("li").first().css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("li").last().css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("li").eq(4).css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("li").eq(-2).css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("li").not(":last").css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("li").not("#list ul li").css("background-color", "rgba(180, 180, 30, 0.8");
+  $("li").not(function(index) {
+    return index % 3 == 1;
+  }).css("background-color", "rgba(180, 180, 30, 0.8");
+
+
+  
 
 });
