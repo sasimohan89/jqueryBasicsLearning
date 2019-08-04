@@ -80,11 +80,18 @@ $(function() {
   // $("li").eq(-2).css("background-color", "rgba(180, 180, 30, 0.8");
   // $("li").not(":last").css("background-color", "rgba(180, 180, 30, 0.8");
   // $("li").not("#list ul li").css("background-color", "rgba(180, 180, 30, 0.8");
-  $("li").not(function(index) {
-    return index % 3 == 1;
-  }).css("background-color", "rgba(180, 180, 30, 0.8");
+  // $("li").not(function(index) {
+  //   return index % 3 == 1;
+  // }).css("background-color", "rgba(180, 180, 30, 0.8");
 
+  // adding elements to dom
 
+  // $("ul ul:first").append("<li>Last item</li>");
+  // $("ul ul:last").prepend("<li>Last item</li>");
+  // $("ul").prepend("<li>Last item</li>");
+  // $("<li>Last item</li>").appendTo("ul ul:last");
+  // $("<li>Last item</li>").prependTo("ul ul:last");
+  $("<H4>Sass</H4>").prependTo("#content");
   
 
 });
