@@ -91,7 +91,56 @@ $(function() {
   // $("ul").prepend("<li>Last item</li>");
   // $("<li>Last item</li>").appendTo("ul ul:last");
   // $("<li>Last item</li>").prependTo("ul ul:last");
-  $("<H4>Sass</H4>").prependTo("#content");
+  // $("<H4>Sass</H4>").prependTo("#content");
+  // $(".red-box").after("<div class='red-box'>Another red box</div>");
+  // $(".blue-box").after("<div class='blue-box'>Another blue box</div>");
+  // // $(".red-box").after("<div class='red-box'>Another red box</div>");
+  // // $(".blue-box").before("<div class='blue-box'>Aher red box</div>");
+  // // $(".blue-box").before(function() {
+  // //   return "<div class='blue-box'>blue 2</div>";
+  // // });
+  // $(".blue-box").before($(".red-box")); //One element selected - new element moved
+  // $("p").after($("#list")); // Multiple p elements selected - new element cloned and placed for each
+  // $(".green-box").after("<div class='green-box'>Another green box</div>");
   
+  // replacing DOM elements
+
+  // $("li").replaceWith("<li>Replaced.</li>");
+  // $("li").replaceWith(function() {
+  //   return "<li>Replaced.</li>"
+  // });
+  // var firstListItem = $("li:first");
+  // var firstListItem = $("<div class='green-box'>More green</div>");
+  // $("p:first").replaceWith(firstListItem);
+  // $("p").replaceWith(firstListItem);
+
+  // $(".blue-box, .red-box").replaceWith(firstListItem);
+  // $(firstListItem).replaceAll(".red-box, .blue-box");
+
+  // removing elements and content
+
+  // $("li").remove();
+  // $("form").children().not("input:text, textarea, br").remove();
+
+  // var detachedListItem = $("li").detach();
+  // $("#content").append(detachedListItem);
+
+  // $("p:first").empty();
+  // $(".blue-box, .green-box, .red-box").empty(); // just removes text completely
+  
+  // manipulating attributes and properties
+
+  // attr(), prop(), val()
+
+  // var specialLink = $("#special-link");
+  // specialLink.attr("title", "google");
+
+  // console.log(specialLink.attr("href"));
+  // console.log(specialLink.attr("title"));
+  // specialLink.attr("href", "http://www.google.com");
+
+  var checkbox = $("input:checked");
+  console.log(checkbox.prop("checked"));
+  console.log(checkbox.attr("checked"));
 
 });
