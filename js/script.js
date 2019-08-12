@@ -139,8 +139,59 @@ $(function() {
   // console.log(specialLink.attr("title"));
   // specialLink.attr("href", "http://www.google.com");
 
-  var checkbox = $("input:checked");
-  console.log(checkbox.prop("checked"));
-  console.log(checkbox.attr("checked"));
+  // var checkbox = $("input:checked");
+  // console.log(checkbox.prop("checked"));
+  // console.log(checkbox.attr("checked"));
+
+  // var textInput = $("input:text");
+  // textInput.val("sass 1");
+  // console.log(textInput.val());
+  // var rangeInput = $("input[type='range']");
+  // console.log(rangeInput.val());
+
+  // creating an image slideshow
+
+  // var galleryImage = $(".gallery").find("img").first();
+  // var images = [
+  //   "images/laptop-mobile_small.jpg",
+  //   "images/laptop-on-table_small.jpg",
+  //   "images/people-office-group-team_small.jpg"
+  // ];
+
+  // var i = 0;
+  // setInterval(function() {
+  //   i = (i + 1) % images.length;  // 0,1,2,0,1,2
+  //   galleryImage.fadeOut(function() {
+  //     $(this).attr("src", images[i]);
+  //     $(this).fadeIn();
+  //   });
+  //   //console.log(galleryImage.attr("src"));
+  // }, 2000);
+  // $(".gallery").hide();
+
+  // changing css properties with jQuery
+
+  $(".gallery").css("display", 'none');
+
+  var redBox = $(".red-box");
+  console.log(redBox.width());
+  console.log(redBox.css("width"));
+  redBox.css("width", "+=20px");
+  redBox.css("background-color", "#AA7700");
+  $("p").css("font-size", "18px");
+
+  var propertiess = $("p").css(["font-size", "line-height", "color"]);
+  console.log(propertiess);
+  console.log(propertiess["color"]);
+
+  redBox.css("user-select", function() {
+    return "none";
+  });  // make it not selectable
+
+
+
+
+
+
 
 });
